@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Clayton Barnett | Programmer</title>
+
+   <!-- Internal Links -->
+   <link rel="stylesheet" href="/css/style.css">
+   <script src="script.js" async></script>
+
+   <!-- External Links -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+</head>
+
+<body id="home">
+   <header class="hero">
+      <nav class="navbar" id="navbar">
+         <h1 class="logo highlight-logo">
+            <a href="#">&lt;Clay/&gt;</a>
+         </h1>
+         <div>
+            <!-- Hamburger Links -->
+            <ul class="nav-menu">
+               <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+               <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+               <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+               <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+               <li class="switch">
+                  <label class="theme-switch" for="checkbox">
+                     <input type="checkbox" id="checkbox" />
+                     <div class="slider round"></div>
+                  </label>
+               </li>
+            </ul>
+            <!-- Hamburger button  -->
+            <div class="hamburger">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <div class="header__title center">
+      <!-- <h1 onclick="alert('HTML alert')"> -->
+      <h1>
+        Hi, my name is
+        <!-- Green highlight effect -->
+        <span class="highlight">Clayton</span>
+        <br>I'm a
+        <span class="highlight">Web</span>
+        Developer
+      </h1>
+      <h4>A Creative Front-End Developer.</h4>
+      <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+      <img src="https://avatars.githubusercontent.com/u/54959662?v=4" class="header__img headshot" alt="Minimalist items" />
+    </div>
+
+    <section id="about" class="test-section">
+      <h3 class="section__description">About <i class="fas fa-user"></i></h3>
+      <p>I'm a Developer from Dallas, Texas. I'm a formally educated programmer who has been programming for 5 years and is still learning new technologies every week, primarily frontend and python-related technologies.</p>
+
+      <p>In my spare time, I enjoy playing video games and spending time with my wife and two dogs. I'm also interested in cryptocurrency, blockchain, and other forms of technology.</p>
+   </section>
+
+   <section class="section" id="projects">
+      <div class="section__title">
+        <h2 class="section__description">Projects</h2>
+        <h3 class="section__header">
+         Some Things I’ve Built.
+        </h3>
+      </div>
+  
+      <div class="features">
+        <img src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Quibble Web Browser</h5>
+          <p>
+            This is a Python-based web browser. It also includes a landing page and a new tab page, as well as the easylist adblocker.
+          </p>
+        </div>
+        
+        <img src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Project 2</h5>
+          <p>
+            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+            quibusdam!
+          </p>
+        </div>
+        <!-- <img src="img/grow.jpg" alt="Plant" class="features__img lazy-img" /> -->
+  
+        <img src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Project 3</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+      </div>
+    </section>
+   
+   <section id="contact" class="test-section">
+      <h3 class="section__description">Contact <i class="fas fa-phone"></i></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam earum incidunt fugiat illo quasi
+         quidem, voluptatem totam repellendus autem, sint iste sapiente, in corporis ut accusantium aspernatur
+         quam adipisci id perferendis laboriosam quibusdam tempora harum quos eius soluta enim, quisquam molestiae?
+         Inventore, sunt similique.</p>
+   </section>
+  
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">Home</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#about">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#projects">Projects</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#contact">Contact</a>
+        </li>
+    </footer>
+    <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function() {
+          scrollFunction()
+      };
+  
+      function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+              document.getElementById("navbar").style.background = "var(--navbar-primary)";
+          } else {
+              document.getElementById("navbar").style.background = "rgba(0,0,0,0)";
+          }
+      }
+  </script>
+</body>
+</html>
