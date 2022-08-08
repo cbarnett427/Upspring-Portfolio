@@ -544,6 +544,7 @@ h4 {
 }
 .features__img {
     width: 85%;
+    border-radius: 5px;
 }
 .features__feature {
     -ms-flex-item-align: center;
