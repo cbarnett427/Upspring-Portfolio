@@ -14,111 +14,180 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 	<!-- ===== BOX ICONS ===== -->
-	<link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" /> </head>
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" /> 
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+</head>
 
 <body id="home">
-	<header class="hero">
-		<nav class="navbar" id="navbar">
-			<h1 class="logo highlight-logo">
-            <a href="#">&lt;Clay/&gt;</a>
-         </h1>
+	<header>
+		<nav>
+			<h1 class="highlight-logo"><a href="#">&lt;Clay/&gt;</a></h1>
 			<div>
-				<!-- Hamburger Links -->
-				<ul class="nav-menu">
-					<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-					<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+				<ul> <!-- Hamburger Links -->
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
 					<li class="switch">
 						<label class="theme-switch" for="checkbox">
-							<input type="checkbox" id="checkbox" />
+							<input type="checkbox" id="checkbox"/>
 							<div class="slider round"></div>
 						</label>
 					</li>
 				</ul>
 				<!-- Hamburger button  -->
-				<div class="hamburger"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </div>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
 			</div>
 		</nav>
 	</header>
-	<div class="header__title container">
-		<h1>
-        Hi, my name is
-        <!-- Gradient highlight effect -->
-        <span class="highlight">Clayton,</span>
-        <br>I'm a
-        <span class="highlight">Web</span>
-        Developer.
-      </h1>
-		<h4>An Extremely Motivated Programmer.</h4>
-		<a href="#about">
-			<button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
-		</a> <img src="https://avatars.githubusercontent.com/u/54959662?v=4" class="header__img headshot" alt="Minimalist items" /> </div>
 
-	<section class="section container how-container" id="about">
-		<h2 class="section__description">About</h2>
-		<div class="left-container">
-			<div class="left-content about__img"> <img src="https://avatars.githubusercontent.com/u/54959662?v=4"> </div>
+	<!-- ========== Hero Section ========== -->
+	<section class="hero">
+		<div class="hero_wrapper">
+			<img class="hero_img" src="https://avatars.githubusercontent.com/u/54959662?v=4" alt="Minimalist items">
+			<h1><span>Clayton Barnett</span></h1>
+			<h3><span>Web Developer / Programmer</span></h3>
+			<div class="hero_social">
+				<a href="#" class="hero_social-icon"><i class="bx bxl-linkedin"></i></a>
+				<a href="#" class="hero_social-icon"><i class="bx bxl-github"></i></a>
+				<a href="#" class="hero_social-icon"><i class="bx bxl-dribbble"></i></a>
+			</div>
 		</div>
-		<div class="right-container">
-			<div class="right-content">
-				<div class="about__container">
-					<h2 class="about__subtitle">Clayton Barnett</h2> <span class="about__profession">Front-End Developer</span>
-					<p class="about__text"> I'm a formally educated programmer who has been programming for 5 years and is still learning new technologies every week, primarily frontend and python-related technologies. </p>
-					<div class="about__social"> <a href="#" class="about__social-icon"><i class="bx bxl-linkedin"></i></a> <a href="#" class="about__social-icon"><i class="bx bxl-github"></i></a> <a href="#" class="about__social-icon"><i class="bx bxl-dribbble"></i></a> </div>
+	</section>
+	<!-- <section class="hero">
+	<div class="hero_title container">
+		<div class="hero_left" class="responsive">
+			<h1>Hi, my name is
+				<span class="highlight">Clayton,</span>
+				<br>I'm a
+				<span class="highlight">Web</span>
+				Developer.
+			</h1>
+			<h4>An Extremely Motivated Programmer.</h4>
+			<a href="#about">
+				<button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+			</a>
+		</div>
+		<div class="hero_right">
+			<img src="https://avatars.githubusercontent.com/u/54959662?v=4" class="hero_img responsive" alt="Minimalist items">
+			<div class="hero_social">
+				<a href="#" class="hero_social-icon"><i class="bx bxl-linkedin"></i></a>
+				<a href="#" class="hero_social-icon"><i class="bx bxl-github"></i></a>
+				<a href="#" class="hero_social-icon"><i class="bx bxl-dribbble"></i></a>
+			</div>
+		</div>
+	  </div>
+	</section> -->
+
+	<!-- ========== About Me & Proficiencies Section ========== -->
+	<section class="section container">
+		<div class="row reveal">
+			<div class="column">
+				<h2>About Me</h2>
+				<p> I'm a formally educated programmer who has been programming for 5 years and is still learning new technologies every week, primarily frontend and python-related technologies.<p>
+				<br>
+				<p>In my spare time, I enjoy playing video games and spending time with my wife and two dogs. I'm also interested in cryptocurrency, blockchain, and other forms of technology.</p>
+			</div>
+			<div class="column">
+				<h2>Proficiencies</h2>
+				<div class="skills">
+					<div class="skill">
+						<div class="skill-name">Communication</div>
+						<div class="skill-bar">
+						<div class="skill-per" per="100%" style="max-width:100%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill-name">Programming</div>
+						<div class="skill-bar">
+						<div class="skill-per" per="95%" style="max-width:95%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill-name">Visual Design</div>
+						<div class="skill-bar">
+						<div class="skill-per" per="90%" style="max-width:90%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill-name">Planning</div>
+						<div class="skill-bar">
+						<div class="skill-per" per="85%" style="max-width:85%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<div class="skill-name">Learning</div>
+						<div class="skill-bar">
+						<div class="skill-per" per="85%" style="max-width:85%"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-
-	<section class="skills-tools container" id="skills-tools">
-		<div class="wrapper">
+	<!-- ========== Skills & Tools Section ========== -->
+	<section class="section container">
+		<div class="skills_wrapper reveal">
 			<h2 class="highlight">Skills &amp; Tools</h2>
 			<p>The knowledge, resources, and technologies I use:</p>
 			<div class="container-icons">
-				<div class="box-icon"> <i class="devicon devicon-html5-plain" aria-hidden="true"></i>
+				<div class="box-icon">
+					<i class="devicon devicon-html5-plain" aria-hidden="true"></i>
 					<p>HTML5</p>
 				</div>
-				<div class="box-icon"> <i class="devicon devicon-css3-plain" aria-hidden="true"></i>
+				<div class="box-icon">
+					<i class="devicon devicon-css3-plain" aria-hidden="true"></i>
 					<p>CSS3</p>
 				</div>
-				<div class="box-icon"> <i class="fab fa-js" aria-hidden="true"></i>
+				<div class="box-icon"> 
+					<i class="fab fa-js" aria-hidden="true"></i>
 					<p>JavaScript</p>
 				</div>
-				<div class="box-icon"> <i class="devicon devicon-bootstrap-plain" aria-hidden="true"></i>
+				<div class="box-icon"> 
+					<i class="devicon devicon-bootstrap-plain" aria-hidden="true"></i>
 					<p>Bootstrap</p>
 				</div>
-				<div class="box-icon"> <i class="devicon devicon-github-plain" aria-hidden="true"></i>
+				<div class="box-icon"> 
+					<i class="devicon devicon-github-plain" aria-hidden="true"></i>
 					<p>Github</p>
 				</div>
-				<div class="box-icon"> <i class="devicon devicon-sass-original" aria-hidden="true"></i>
+				<div class="box-icon"> 
+					<i class="devicon devicon-sass-original" aria-hidden="true"></i>
 					<p>SASS</p>
 				</div>
-				<div class="box-icon"> <i class="fas fa-terminal" aria-hidden="true"></i>
+				<div class="box-icon"> 
+					<i class="fas fa-terminal" aria-hidden="true"></i>
 					<p>Command Line</p>
 				</div>
-				<div class="box-icon"> <i class="devicon devicon-visualstudio-plain" aria-hidden="true"></i>
+				<div class="box-icon"> 
+					<i class="devicon devicon-visualstudio-plain" aria-hidden="true"></i>
 					<p>VS Code</p>
 				</div>
-				<div class="box-icon"> <i class="devicon devicon-python-plain" aria-hidden="true"></i>
+				<div class="box-icon"> 
+					<i class="devicon devicon-python-plain" aria-hidden="true"></i>
 					<p>Python</p>
 				</div>
-				<div class="box-icon"> <i class="fab devicon-cplusplus-plain" aria-hidden="true"></i>
+				<div class="box-icon"> 
+					<i class="fab devicon-cplusplus-plain" aria-hidden="true"></i>
 					<p>C++</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-
-	<section class="section container" id="projects">
-		<div class="section__title">
-			<h2 class="section__description">Projects</h2>
-			<h3 class="section__header">
-         Some Things I’ve Built.
-        </h3> </div>
-		<div class="features"> <img src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
+	<!-- ========== Projects Section ========== -->
+	<section class="section container reveal" id="projects">
+		<div class="project_header reveal">
+			<h2 class="project_header_title">Projects</h2>
+			<h3 class="project_header_subtitle">Some Things I’ve Built</h3> 
+		</div>
+		<div class="features reveal"> 
+			<img src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
 			<div class="features__feature">
 				<div class="features__icon">
 					<svg>
@@ -127,7 +196,10 @@
 				</div>
 				<h5 class="features__header">Quibble Web Browser</h5>
 				<p> This is a Python-based web browser. It also includes a landing page and a new tab page, as well as the easylist adblocker. </p>
-			</div> <img src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
+			</div> 
+			
+
+			<img src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
 			<div class="features__feature">
 				<div class="features__icon">
 					<svg>
@@ -137,7 +209,9 @@
 				<h5 class="features__header">Project 2</h5>
 				<p> Nesciunt quos autem dolorum voluptates cum dolores dicta fuga inventore ab? Nulla incidunt eius numquam sequi iste pariatur quibusdam! </p>
 			</div>
-			<!-- <img src="img/grow.jpg" alt="Plant" class="features__img lazy-img" /> --><img src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
+			
+
+			<img src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
 			<div class="features__feature">
 				<div class="features__icon">
 					<svg>
@@ -160,20 +234,47 @@
 		</div>
 	</footer>
 	<script>
-	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-	window.onscroll = function() {
-		scrollFunction()
-	};
+		let section = document.querySelectorAll("section");
+		let menu = document.querySelectorAll("header nav a");
 
-	function scrollFunction() {
-		if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-			document.getElementById("navbar").style.background = "var(--navbar-secondary)";
-			document.getElementById("navbar").style.boxShadow = "rgb(12 12 12 / 10%) 1px 3px 5px";
-		} else {
-			document.getElementById("navbar").style.background = "rgba(0,0,0,0)";
-			document.getElementById("navbar").style.boxShadow = "none";
+		window.onscroll = () => {
+		section.forEach((i) => {
+			let top = window.scrollY;
+			let offset = i.offsetTop - 150;
+			let height = i.offsetHeight;
+			let id = i.getAttribute("id");
+
+			if (top >= offset && top < offset + height) {
+			menu.forEach((link) => {
+				link.classList.remove("active");
+				document
+				.querySelector("header nav a[href*=" + id + "]")
+				.classList.add("active");
+			});
+			}
+		});
+		};
+
+		function reveal() {
+		var reveals = document.querySelectorAll(".reveal");
+
+		for (var i = 0; i < reveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = reveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
+
+			if (elementTop < windowHeight - elementVisible) {
+			reveals[i].classList.add("active");
+			} else {
+			reveals[i].classList.remove("active");
+			}
 		}
-	}
+		}
+
+		window.addEventListener("scroll", reveal);
+
+		// To check the scroll position on page load
+		reveal();
 	</script>
 </body>
 

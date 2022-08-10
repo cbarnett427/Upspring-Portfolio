@@ -39,3 +39,36 @@ function switchTheme(e) {
 	}
 }
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+// Skillbar
+jQuery(document).ready(function () {
+	jQuery(".skillbar").each(function () {
+	  jQuery(this)
+		.find(".skillbar-bar")
+		.animate(
+		  {
+			width: jQuery(this).attr("data-percent")
+		  },
+		  6000
+		);
+	});
+  });
+
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// window.onscroll = function() {
+// 	scrollFunction()
+// };
+
+// function scrollFunction() {
+// 	if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+// 		document.getElementById("navbar").style.background = "var(--navbar-primary)";
+// 		document.getElementById("navbar").style.boxShadow = "rgb(12 12 12 / 10%) 1px 3px 5px";
+// 		document.getElementById("navbar").style.color = "var(--primary-text)";
+		
+// 	} else {
+// 		document.getElementById("navbar").style.background = "rgba(0,0,0,0)";
+// 		document.getElementById("navbar").style.boxShadow = "none";
+// 		document.getElementById("navbar").style.color = "var(--secondary-text)";
+// 	}
+// }
