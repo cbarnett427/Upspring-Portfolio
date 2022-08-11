@@ -59,30 +59,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section class="hero">
-	<div class="hero_title container">
-		<div class="hero_left" class="responsive">
-			<h1>Hi, my name is
-				<span class="highlight">Clayton,</span>
-				<br>I'm a
-				<span class="highlight">Web</span>
-				Developer.
-			</h1>
-			<h4>An Extremely Motivated Programmer.</h4>
-			<a href="#about">
-				<button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
-			</a>
-		</div>
-		<div class="hero_right">
-			<img src="https://avatars.githubusercontent.com/u/54959662?v=4" class="hero_img responsive" alt="Minimalist items">
-			<div class="hero_social">
-				<a href="#" class="hero_social-icon"><i class="bx bxl-linkedin"></i></a>
-				<a href="#" class="hero_social-icon"><i class="bx bxl-github"></i></a>
-				<a href="#" class="hero_social-icon"><i class="bx bxl-dribbble"></i></a>
-			</div>
-		</div>
-	  </div>
-	</section> -->
 
 	<!-- ========== About Me & Proficiencies Section ========== -->
 	<section class="section container">
@@ -90,40 +66,39 @@
 			<div class="column">
 				<h2>About Me</h2>
 				<p> I'm a formally educated programmer who has been programming for 5 years and is still learning new technologies every week, primarily frontend and python-related technologies.<p>
-				<br>
 				<p>In my spare time, I enjoy playing video games and spending time with my wife and two dogs. I'm also interested in cryptocurrency, blockchain, and other forms of technology.</p>
 			</div>
-			<div class="column">
+			<div class="column" >
 				<h2>Proficiencies</h2>
-				<div class="skills">
+				<div class="skills" >
 					<div class="skill">
 						<div class="skill-name">Communication</div>
 						<div class="skill-bar">
-						<div class="skill-per" per="100%" style="max-width:100%"></div>
+						<div class="skill-per" id="skill-per1" per="100%" style="max-width:100%"></div>
 						</div>
 					</div>
 					<div class="skill">
 						<div class="skill-name">Programming</div>
 						<div class="skill-bar">
-						<div class="skill-per" per="95%" style="max-width:95%"></div>
+						<div class="skill-per" id="skill-per2" per="95%" style="max-width:95%"></div>
 						</div>
 					</div>
 					<div class="skill">
 						<div class="skill-name">Visual Design</div>
 						<div class="skill-bar">
-						<div class="skill-per" per="90%" style="max-width:90%"></div>
+						<div class="skill-per" id="skill-per3" per="90%" style="max-width:90%"></div>
 						</div>
 					</div>
 					<div class="skill">
 						<div class="skill-name">Planning</div>
 						<div class="skill-bar">
-						<div class="skill-per" per="85%" style="max-width:85%"></div>
+						<div class="skill-per" id="skill-per4" per="85%" style="max-width:85%"></div>
 						</div>
 					</div>
 					<div class="skill">
 						<div class="skill-name">Learning</div>
 						<div class="skill-bar">
-						<div class="skill-per" per="85%" style="max-width:85%"></div>
+						<div class="skill-per" id="skill-per5" per="85%" style="max-width:85%"></div>
 					</div>
 				</div>
 			</div>
@@ -275,6 +250,25 @@
 
 		// To check the scroll position on page load
 		reveal();
+		
+
+		const element = document.querySelector('.skill-per');
+		const observer = new IntersectionObserver(entries => {
+			// Loop over the entries
+			entries.forEach(entry => {
+				// Let's just toggle a class here
+				// We can respond to it however we want in CSS
+				entry.target.classList.toggle('skill-per', entry.isIntersecting);
+
+			});
+			
+		});
+		observer.observe(document.querySelector('#skill-per1'));
+		observer.observe(document.querySelector('#skill-per2'));
+		observer.observe(document.querySelector('#skill-per3'));
+		observer.observe(document.querySelector('#skill-per4'));
+		observer.observe(document.querySelector('#skill-per5'));
+		
 	</script>
 </body>
 

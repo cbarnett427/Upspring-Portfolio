@@ -430,7 +430,6 @@ input:checked + .slider:before {
 /* ========== ABOUT ========== */
 .skills{
     width: 100%;
-    max-width: 600px;
 }
 
 .skill-name{
@@ -452,7 +451,7 @@ input:checked + .slider:before {
     background: var(--gradient-primary-reverse);
     border-radius: 3px;
     position: relative;
-    animation: fillBars 5.5s 1;
+    animation: fillBars 2.5s;
 }
 
 .skill-per::before{
@@ -481,12 +480,8 @@ input:checked + .slider:before {
 }
 
 @keyframes fillBars{
-    from{
-    width: 0;
-    }
-    to{
-    width: 100%;
-    }
+    from { width: 0%; }
+    to { width: 100%; }
 }
 /* ========== SKILLS ========== */
 .skills_wrapper {
