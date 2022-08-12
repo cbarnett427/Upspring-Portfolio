@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Clayton Barnett | Programmer</title>
-	<!-- Internal Links -->
+
+	<!-- ========== Internal Links ========== -->
 	<link rel="stylesheet" href="/css/style.css">
 	<script src="script.js" async></script>
-	<!-- External Links -->
-	<!-- ===== FONTAWESOME ICONS ===== -->
+
+	<!-- ========== External Links ========== -->
+	<!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-	<!-- ===== BOX ICONS ===== -->
+	<!-- Box Icons -->
 	<link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" /> 
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
+	<!-- Dev Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
 <body id="home">
@@ -61,44 +61,35 @@
 	</section>
 
 	<!-- ========== About Me & Proficiencies Section ========== -->
-	<section class="section container">
-		<div class="row reveal">
+	<section class="section container reveal">
+		<div class="row">
 			<div class="column">
 				<h2>About Me</h2>
 				<p> I'm a formally educated programmer who has been programming for 5 years and is still learning new technologies every week, primarily frontend and python-related technologies.<p>
 				<p>In my spare time, I enjoy playing video games and spending time with my wife and two dogs. I'm also interested in cryptocurrency, blockchain, and other forms of technology.</p>
 			</div>
-			<div class="column" >
+			<div class="column">
 				<h2>Proficiencies</h2>
-				<div class="skills" >
-					<div class="skill">
-						<div class="skill-name">Communication</div>
-						<div class="skill-bar">
-						<div class="skill-per" id="skill-per1" per="100%" style="max-width:100%"></div>
-						</div>
+				<div class="skills">
+					<div class="skill-name">Communication</div>
+					<div class="skill-bar">
+					<div class="skill-per fill_bar toanimate" per="100%" style="max-width:100%"></div>
 					</div>
-					<div class="skill">
-						<div class="skill-name">Programming</div>
-						<div class="skill-bar">
-						<div class="skill-per" id="skill-per2" per="95%" style="max-width:95%"></div>
-						</div>
+					<div class="skill-name">Programming</div>
+					<div class="skill-bar">
+					<div class="skill-per fill_bar toanimate" per="95%" style="max-width:95%"></div>
 					</div>
-					<div class="skill">
-						<div class="skill-name">Visual Design</div>
-						<div class="skill-bar">
-						<div class="skill-per" id="skill-per3" per="90%" style="max-width:90%"></div>
-						</div>
+					<div class="skill-name">Visual Design</div>
+					<div class="skill-bar">
+					<div class="skill-per fill_bar toanimate" per="90%" style="max-width:90%"></div>
 					</div>
-					<div class="skill">
-						<div class="skill-name">Planning</div>
-						<div class="skill-bar">
-						<div class="skill-per" id="skill-per4" per="85%" style="max-width:85%"></div>
-						</div>
+					<div class="skill-name">Planning</div>
+					<div class="skill-bar">
+					<div class="skill-per fill_bar toanimate" per="85%" style="max-width:85%"></div>
 					</div>
-					<div class="skill">
-						<div class="skill-name">Learning</div>
-						<div class="skill-bar">
-						<div class="skill-per" id="skill-per5" per="85%" style="max-width:85%"></div>
+					<div class="skill-name">Learning</div>
+					<div class="skill-bar">
+					<div class="skill-per fill_bar toanimate" per="85%" style="max-width:85%"></div>
 					</div>
 				</div>
 			</div>
@@ -250,25 +241,6 @@
 
 		// To check the scroll position on page load
 		reveal();
-		
-
-		const element = document.querySelector('.skill-per');
-		const observer = new IntersectionObserver(entries => {
-			// Loop over the entries
-			entries.forEach(entry => {
-				// Let's just toggle a class here
-				// We can respond to it however we want in CSS
-				entry.target.classList.toggle('skill-per', entry.isIntersecting);
-
-			});
-			
-		});
-		observer.observe(document.querySelector('#skill-per1'));
-		observer.observe(document.querySelector('#skill-per2'));
-		observer.observe(document.querySelector('#skill-per3'));
-		observer.observe(document.querySelector('#skill-per4'));
-		observer.observe(document.querySelector('#skill-per5'));
-		
 	</script>
 </body>
 
