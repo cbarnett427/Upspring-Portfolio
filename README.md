@@ -13,7 +13,6 @@ This project is licensed under the GPLv3 License - see the LICENSE.md file for d
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
 * [Google Fonts](https://fonts.google.com/) - Fonts used
 * [Font Awesome](https://fontawesome.com/?from=io/) - Icons used
 * [Box Icons](https://boxicons.com/) - Icons used
