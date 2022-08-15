@@ -13,7 +13,7 @@ Website for my personal portfolio. It's on display at: https://cbarnett427.githu
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the GPLv3 License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
