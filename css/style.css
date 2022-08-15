@@ -135,7 +135,7 @@ nav h1 a {
     color: inherit;
 }
 nav h1 a:hover {
-    color: var(--primary-color);
+    color: var(--navbar-primary);
 }
 nav ul {
     display: -webkit-box;
@@ -296,7 +296,7 @@ input:checked + .slider:before {
 }
 .hero_social i {
     color: var(--secondary-text);
-    font-size: 30px;
+    font-size: 28px;
     margin: 0 0.5rem;
 }
 .hero_social i:hover {
@@ -379,8 +379,7 @@ input:checked + .slider:before {
         flex-direction: column;
     }
   }
-  
-/* ========== ABOUT ========== */
+
 .skills {
     width: 100%;
 }
@@ -479,6 +478,100 @@ input:checked + .slider:before {
 }
 
 /* ========== PROJECTS ========== */
+/* Create two equal columns that floats next to each other */
+.projects .project_row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.projects .project_row .project_left {
+    flex-basis: 50%;
+    margin-right: 2rem;
+}
+.projects .project_row .project_right {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects .project_row .project_right .tech_stack {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 1rem;
+
+}
+.projects .project_row .project_right .tech_stack li {
+    color: var(--primary-text);
+    font-size: 28px;
+    margin: 0 1rem;
+}
+.projects .project_row .project_right .project_links {
+    margin-top: 1rem;
+}
+.project_button {
+  background-color: var(--navbar-primary);
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: var(--primary-text);
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+}
+.project_button:hover {
+transform: scale(1.1);
+}
+.project_button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.project_button:focus-visible {
+  box-shadow: none;
+}
+.project_img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.project_header {
+    max-width: 50rem;
+    margin: 0 auto 8rem auto;
+    text-align: center;
+}
+.projects h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .projects .project_row {
+        flex-direction: column;
+    }
+}
+
+/* 
 .project_header {
     max-width: 50rem;
     margin: 0 auto 8rem auto;
@@ -509,8 +602,8 @@ input:checked + .slider:before {
     width: 100%;
     border-radius: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-.features__feature {
+}*/
+/* .features__feature {
     -ms-grid-row-align: center;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
@@ -547,7 +640,7 @@ input:checked + .slider:before {
 .features__header {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-}
+} */
 
 /* ========== FOOTER ========== */
 .footer-distributed {
@@ -737,6 +830,7 @@ input:checked + .slider:before {
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 @media only screen and (min-width: 768px) and (max-width: 991px) {}
+
 
 
 
