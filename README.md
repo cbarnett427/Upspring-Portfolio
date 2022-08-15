@@ -7,8 +7,8 @@ Simple overview of use/purpose.
 Website for my personal portfolio. It's on display at: https://cbarnett427.github.io/
 
 ## Created using
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 
 ## License
