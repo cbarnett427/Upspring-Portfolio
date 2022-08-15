@@ -1,9 +1,5 @@
 # My Current Developer Porfolio
 
-Simple overview of use/purpose.
-
-## Description
-
 Website for my personal portfolio. It's on display at: https://cbarnett427.github.io/
 
 ## Created using
