@@ -737,7 +737,7 @@ transform: scale(1.1);
     }
 
     input:checked + .slider {
-        background-color: var(--bg-fill-color);
+        background-color: var(--secondary-text);
     }
 
     .hamburger {
@@ -855,7 +855,7 @@ transform: scale(1.1);
     }
 
     input:checked + .slider {
-        background-color: var(--bg-fill-color);
+        background-color: var(--secondary-text);
     }
 
     .hamburger {
@@ -973,7 +973,7 @@ transform: scale(1.1);
     }
 
     input:checked + .slider {
-        background-color: var(--bg-fill-color);
+        background-color: var(--secondary-text);
     }
 
     .hamburger {
