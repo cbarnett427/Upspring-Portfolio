@@ -798,6 +798,11 @@ transform: scale(1.1);
     .projects .project_row .project_right .tech_stack {
         margin: .5rem 0 .5rem 0;
     }
+    .projects .project_row .project_right .tech_stack li {
+        color: var(--primary-text);
+        font-size: 28px;
+        margin: 0 .75rem;
+    }
 }
 
 /* iPads & Tablets */
