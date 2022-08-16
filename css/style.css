@@ -18,8 +18,8 @@
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-primary-reverse: linear-gradient(to top left, #9be15d, #39b385);
     /* Text colors */
-    --primary-text: red;
-    --secondary-text: #fafafa;
+    --primary-text: #3f3f46;
+    --secondary-text: #f4f4f4;
     /* Background colors */
     --primary-background: #e4e4e7;
     --secondary-background: #212224ff;
@@ -33,11 +33,11 @@
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-primary-reverse: linear-gradient(to top left, #9be15d, #39b385);
     /* Text colors */
-    --primary-text: #e4e4e7;
+    --primary-text: #f4f4f4;
     --secondary-text: #3f3f46;
     /* Background colors */
     --primary-background: #27272a;
-    --secondary-background: #f3f3f3;
+    --secondary-background: #f4f4f4;
     /* Navigation colors */
     --navbar-primary: #18181b;
 }
