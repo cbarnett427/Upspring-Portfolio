@@ -24,7 +24,6 @@
     --primary-background: #e4e4e7;
     --secondary-background: #212224ff;
     /* Navigation colors */
-    --navbar-transparent:rgba(0,0,0,0);
     --navbar-primary: #fafafa;
 }
 /* Dark Mode */
@@ -40,7 +39,6 @@
     --primary-background: #27272a;
     --secondary-background: #f3f3f3;
     /* Navigation colors */
-    --navbar-transparent:rgba(0,0,0,0);
     --navbar-primary: #18181b;
 }
 /* Reset */
@@ -185,7 +183,7 @@ nav ul li a {
     transition: all 0.3s ease-in-out;
     background-color: var(--primary-text);
 }
-.theme-switch {
+/* .theme-switch {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -234,7 +232,7 @@ input:checked + .slider:before {
 }
 .slider.round:before {
     border-radius: 50%;
-}
+} */
 /* ========== HERO ========== */
 .hero {
     background-image: url("/img/hero_bg.png");
