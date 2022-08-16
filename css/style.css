@@ -18,13 +18,13 @@
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-primary-reverse: linear-gradient(to top left, #9be15d, #39b385);
     /* Text colors */
-    --primary-text: #3f3f46;
+    --primary-text: red;
     --secondary-text: #fafafa;
     /* Background colors */
     --primary-background: #e4e4e7;
     --secondary-background: #212224ff;
     /* Navigation colors */
-    --navbar-primary: #fafafa;
+    --navbar-primary: #f4f4f4;
 }
 /* Dark Mode */
 :root[color-mode="dark"] {
@@ -183,7 +183,7 @@ nav ul li a {
     transition: all 0.3s ease-in-out;
     background-color: var(--primary-text);
 }
-/* .theme-switch {
+.theme-switch {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -232,7 +232,7 @@ input:checked + .slider:before {
 }
 .slider.round:before {
     border-radius: 50%;
-} */
+}
 /* ========== HERO ========== */
 .hero {
     background-image: url("/img/hero_bg.png");
