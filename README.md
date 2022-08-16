@@ -1,6 +1,6 @@
 # My Current Developer Portfolio
 
-Website for my personal portfolio. It's on display at: https://cbarnett427.github.io/
+My Personal Portfolio Website. It's on display at: https://cbarnett427.github.io/
 
 ## Created using
 - HTML5
