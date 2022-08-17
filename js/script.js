@@ -109,8 +109,7 @@ window.addEventListener("scroll", reveal);
 reveal();
 
 
-// Hide navbar on scroll
-// When the user scrolls down 20px from the top of the document, slide down the navbar
+// Hide/Show navbar on scroll
 var lastScrollTop;
 navbar = document.getElementById('navbar');
 window.addEventListener('scroll',function(){
