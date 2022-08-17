@@ -14,17 +14,17 @@
 /* Light Mode */
 :root[color-mode="light"] {
     /* Accent colors */
-    --primary-color: #5ec576 !important;
+    --primary-color: #5ec576;
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-primary-reverse: linear-gradient(to top left, #9be15d, #39b385);
     /* Text colors */
-    --primary-text: #3f3f46 !important;
-    --secondary-text: #fafafa !important;
+    --primary-text: #3f3f46;
+    --secondary-text: #ffffff;
     /* Background colors */
-    --primary-background: #e4e4e7 !important;
-    --secondary-background: #212224ff !important;
+    --primary-background: #e4e4e7;
+    --secondary-background: #212224ff;
     /* Navigation colors */
-    --navbar-primary: #fafafa !important;
+    --navbar-primary: #ffffff;
 }
 /* Dark Mode */
 :root[color-mode="dark"] {
@@ -33,11 +33,11 @@
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-primary-reverse: linear-gradient(to top left, #9be15d, #39b385);
     /* Text colors */
-    --primary-text: #f4f4f4;
+    --primary-text: #ffffff;
     --secondary-text: #3f3f46;
     /* Background colors */
     --primary-background: #27272a;
-    --secondary-background: #f4f4f4;
+    --secondary-background: #ffffff;
     /* Navigation colors */
     --navbar-primary: #18181b;
 }
@@ -121,6 +121,7 @@ nav {
     background-color: var(--navbar-primary);
     box-shadow: rgb(12 12 12 / 10%) 1px 3px 5px;
     transition: background 0.4s;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 nav h1 {
     font-size: 2rem;
