@@ -14,17 +14,17 @@
 /* Light Mode */
 :root[color-mode="light"] {
     /* Accent colors */
-    --primary-color: #5ec576;
+    --primary-color: #5ec576 !important;
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-primary-reverse: linear-gradient(to top left, #9be15d, #39b385);
     /* Text colors */
-    --primary-text: #3f3f46;
-    --secondary-text: #f4f4f4;
+    --primary-text: #3f3f46 !important;
+    --secondary-text: #fafafa !important;
     /* Background colors */
-    --primary-background: #e4e4e7;
-    --secondary-background: #212224ff;
+    --primary-background: #e4e4e7 !important;
+    --secondary-background: #212224ff !important;
     /* Navigation colors */
-    --navbar-primary: #f4f4f4;
+    --navbar-primary: #fafafa !important;
 }
 /* Dark Mode */
 :root[color-mode="dark"] {
