@@ -9,7 +9,6 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-
 /* ========== Variables ========== */
 /* Define dark and light palettes with CSS variables */
 /* Light Mode */
@@ -27,6 +26,7 @@
     /* Navigation colors */
     --navbar-primary: #ffffff;
 }
+
 /* Dark Mode */
 :root[color-mode="dark"] {
     /* Accent colors */
@@ -179,16 +179,6 @@ nav {
     -webkit-transition: top 0.3s;
     -o-transition: top 0.3s;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-}
-@media (prefers-color-scheme: light) {
-    nav {
-        background-color: #ffffff;
-    }
-}
-@media (prefers-color-scheme: dark) {
-    nav {
-        background-color: #18181b;
-    }
 }
 nav h1 {
     font-size: 2rem;
