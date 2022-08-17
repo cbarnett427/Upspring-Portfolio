@@ -111,13 +111,15 @@ reveal();
 
 // Hide navbar on scroll
 // When the user scrolls down 20px from the top of the document, slide down the navbar
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-64px";
-  }
-  prevScrollpos = currentScrollPos;
+var lastScrollTop;
+navbar = document.getElementById('navbar');
+window.addEventListener('scroll',function(){
+var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+if(scrollTop > lastScrollTop){
+navbar.style.top='-64px';
 }
+else{
+navbar.style.top='0';
+}
+lastScrollTop = scrollTop;
+});
