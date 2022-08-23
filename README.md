@@ -6,6 +6,7 @@ My Personal Portfolio Website. It's on display at: https://cbarnett427.github.io
 - HTML5
 - CSS3
 - JavaScript
+- PHP
 
 ## License
 
