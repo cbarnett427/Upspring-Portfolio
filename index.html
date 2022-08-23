@@ -7,8 +7,9 @@
 	<title>Clayton Barnett | Software Developer</title>
 
 	<!-- ========== Internal Links ========== -->
-	<link rel="stylesheet" href="/css/style.css">
-	<script src="/js/script.js" async></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<script src="js/script.js" async></script>
 
 	<!-- ========== External Links ========== -->
 	<!-- Font Awesome Icons -->
@@ -34,6 +35,9 @@
 					<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
 					<li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
 					<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+					<li class="nav-item">
+						<a class="nav-link nav-link--btn btn--show-modal" href="#">Contact</a>
+					</li>
 					<li class="switch">
 						<label class="theme-switch" for="checkbox">
 							<input type="checkbox" id="checkbox"/>
@@ -230,8 +234,26 @@
 			<p>Handcrafted by Clayton Barnett <i class="fa-regular fa-copyright"></i> 2022</p>
 		</div>
 	</footer>
-</body>
-<script>
-</script>
 
+	<div class="overlay hidden"></div>
+	<div class="modal hidden">
+	  <button class="btn--close-modal">&times;</button>
+	  <h2 class="modal__header">
+		<span class="highlight">&nbsp;Contact Me&nbsp;</span>
+	  </h2>
+	  <form class="modal__form" action="email.php" method="post" name="contactform">
+  
+		<label for="full">Name</label>
+		<input maxlength="50" name="full_name" id="full" size="30" type="text" required placeholder="Enter your name"/>
+  
+		<label for="emailadr">Email</label>
+		<input maxlength="80" name="email" id="emailadr" size="30" type="email" required placeholder="Enter your email"/>
+		
+		<label id="msg" for="msg">Message</label>
+		<textarea cols="25" maxlength="1000" id="msg" name="comments" rows="5" required placeholder="Enter your message" ></textarea>
+		<button class="btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
+	  </form>
+	</div>
+	<div class="overlay hidden"></div>
+</body>
 </html>
