@@ -50,7 +50,6 @@ body.dark-theme {
 /* defaults to dark theme */
 body {
     --text-color: #3f3f46;
-    --subtext-color: #18181b;
     --slider-bg: #cccccc;
     --slider-round: #f4f4f4;
     --bg-color-primary: #f4f4f4;
