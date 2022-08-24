@@ -7,7 +7,7 @@ if(isset($_POST['email'])) {
  
     $email_to = "cbarnett427@live.com";
  
-    $email_subject = "cbarnett427.github.io - Contact Form Submission";
+    $email_subject = "www.claytonbarnett.com - Contact Form Submission";
  
      
  
@@ -76,7 +76,7 @@ if(isset($_POST['email'])) {
         </style>
         <body>
           <footer class="site_footer" id="footer">
-          <a href="http://localhost/cbarnett-portfolio-V2/index.html" class="btn"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+          <a href="https://www.claytonbarnett.com" class="btn"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
           </footer>
         </body>
         </html>';
@@ -158,7 +158,7 @@ $headers = 'From: '.$email_from."\r\n".
 
   <script type="text/javascript">
     var count = 10;
-    var redirect = "http://localhost/cbarnett-portfolio-V2/index.html";
+    var redirect = "https://www.claytonbarnett.com";
     function countDown() {
     if(count >= 0){
       document.getElementById("timer").innerHTML = count--;

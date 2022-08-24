@@ -21,25 +21,31 @@ function closeMenu() {
 
 
 // Theme Switching Code
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
-if(currentTheme) {
-	document.documentElement.setAttribute('color-mode', currentTheme);
-	if(currentTheme === 'dark') {
-		toggleSwitch.checked = true;
-	}
+const btn = document.querySelector('.theme-switch input[type="checkbox"]');
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.toggle("dark-theme");
+} else if (currentTheme == "light") {
+  document.body.classList.toggle("light-theme");
 }
 
-function switchTheme(e) {
-	if(e.target.checked) {
-		document.documentElement.setAttribute('color-mode', 'dark');
-		localStorage.setItem('theme', 'dark');
-	} else {
-		document.documentElement.setAttribute('color-mode', 'light');
-		localStorage.setItem('theme', 'light');
-	}
-}
-toggleSwitch.addEventListener('change', switchTheme, false);
+btn.addEventListener("click", function () {
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-theme");
+    var theme = document.body.classList.contains("light-theme")
+      ? "light"
+      : "dark";
+  } else {
+    document.body.classList.toggle("dark-theme");
+    var theme = document.body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+  }
+  localStorage.setItem("theme", theme);
+});
+
 
 
 // Skillbars Code
