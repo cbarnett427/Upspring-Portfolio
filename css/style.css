@@ -11,21 +11,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 :root {
-    color-scheme: light dark; /* both supported */
-}
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
-}
-/* ========== Main Styling ========== */
-/* Manual Light/Dark Mode Settings */
-body {
     --text-color: #3f3f46;
     --subtext-color: #f4f4f4;
     --slider-bg: #cccccc;
@@ -37,7 +22,8 @@ body {
     --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
     --gradient-primary-reverse: linear-gradient(to top left, #9be15d, #39b385);
 }
-body.dark-theme {
+
+[data-theme="dark"] {
     --text-color: #f4f4f4;
     --subtext-color: #18181b;
     --slider-bg: #cccccc;
@@ -45,26 +31,18 @@ body.dark-theme {
     --bg-color-primary: #27272a;
     --bg-color-secondary: #18181b;
 }
-/* Automatic Light/Dark Mode Settings */
-@media (prefers-color-scheme: dark) {
-/* defaults to dark theme */
-body {
-    --text-color: #3f3f46;
-    --slider-bg: #cccccc;
-    --slider-round: #f4f4f4;
-    --bg-color-primary: #f4f4f4;
-    --bg-color-secondary: #ffffff;
-}
-body.light-theme {
-    --text-color: #f4f4f4;
-    --subtext-color: #3f3f46;
-    --slider-bg: #cccccc;
-    --slider-round: #3f3f46;
-    --bg-color-primary: #27272a;
-    --bg-color-secondary: #18181b;
-}
-}
 
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* ========== Main Styling ========== */
 body {
     background: var(--bg-color-primary);
     color: var(--text-color);
