@@ -57,9 +57,6 @@ body {
         -ms-animation: fadein 1s; /* Internet Explorer */
          -o-animation: fadein 1s; /* Opera < 12.1 */
             animation: fadein 1s;
-    --nav-height: 64px;
-
-    padding-top: var(--nav-height);
 }
 
 h1,
@@ -157,7 +154,7 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: var(--nav-height);
+    height: 56px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -174,14 +171,10 @@ nav {
     -webkit-transition: background 0.4s;
     -o-transition: background 0.4s;
     transition: background 0.4s;
-    -webkit-transition: transform 0.3s;
-    -o-transition: transform 0.3s;
-    transition: transform 0.3s; /* Transition effect when sliding down (and up) */
+    -webkit-transition: top 0.3s;
+    -o-transition: top 0.3s;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
-.nav--hidden {
-    transform: translateY(calc(-1 * var(--nav-height)));
-    box-shadow: none;
-  }
 nav h1 {
     font-size: 2rem;
 }
