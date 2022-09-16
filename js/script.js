@@ -115,26 +115,8 @@ window.addEventListener("scroll", reveal);
 reveal();
 
 
-// Hide/Show navbar on scroll
-var lastScrollTop;
-navbar = document.getElementById('navbar');
-window.addEventListener('scroll',function(){
-var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-if(scrollTop > lastScrollTop){
-navbar.style.top='-64px';
-}
-else{
-navbar.style.top='0';
-}
-lastScrollTop = scrollTop;
-});
 
-
-
-
-
-
-
+// Modal Window Section
 'use strict';
 
 const modal = document.querySelector('.modal');
