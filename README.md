@@ -1,4 +1,4 @@
-# My Current Developer Portfolio
+# My Current Responsive Developer Portfolio
 
 My Personal Portfolio Website. It's on display at: https://cbarnett427.github.io/
 
