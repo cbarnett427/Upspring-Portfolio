@@ -1,20 +1,23 @@
-# My Current Responsive Developer Portfolio
+<div align="center">
+<h1>Green.ly Portfolio</h1>
+<i>My Current Responsive Developer Portfolio, that works with GitHub Pages.</i><br>
+<a href="https://cbarnett427.github.io/"><b>Live Demo</b></a>
+<h2 align="center">
+  <img src="https://github.com/cbarnett427/cbarnett427.github.io/blob/main/img/Example.png" alt="Canvas Portfolio"/>
+  <sub><sup>© 2022 Green.ly Portfolio - Licensed under the <a href="./LICENSE">GPLv3 License</a>.</sup></sub>
+  <br>
+</h2>
+</div>
 
-My Personal Portfolio Website. It's on display at: https://cbarnett427.github.io/
+## Features :tada:
+:star: One Page Layout\
+:star: Responsive Design\
+:star: Light & Dark Modes\
+:star: Valid HTML5 & CSS3\
+:star: Organized documentation\
+:star: Styled with Vanilla CSS
 
-## Created using
-- HTML5
-- CSS3
-- JavaScript
-- PHP
-
-## License
-
-This project is licensed under the GPLv3 License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-* [Google Fonts](https://fonts.google.com/) - Fonts used
-* [Font Awesome](https://fontawesome.com/?from=io/) - Icons used
-* [Box Icons](https://boxicons.com/) - Icons used
-* [Dev Icons](https://devicon.dev/) - Icons used
+## Advantages :loudspeaker:
+:dart: Professional way to showcase your work\
+:dart: Increases your visibility and online presence\
+:dart: Shows you’re more than just a resume
