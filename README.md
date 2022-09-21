@@ -3,7 +3,7 @@
 <i>My Current Responsive Developer Portfolio, that works with GitHub Pages.</i><br>
 <a href="https://cbarnett427.github.io/Upspring-Portfolio/"><b>Live Demo</b></a>
 <h2 align="center">
-  <img src="https://github.com/cbarnett427/Upspring-Portfolio/blob/main/img/Example.png" alt="Upspring Portfolio"/>
+  <img src="https://github.com/cbarnett427/Upspring-Portfolio/blob/main/img/UpspringExample.png" alt="Upspring Portfolio"/>
   <sub><sup>© 2022 Upspring Portfolio - Licensed under the <a href="./LICENSE">GPLv3 License</a>.</sup></sub>
   <br>
 </h2>
