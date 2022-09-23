@@ -4,7 +4,7 @@
 <a href="https://cbarnett427.github.io/Upspring-Portfolio/"><b>Live Demo</b></a>
 <h2 align="center">
   <img src="https://github.com/cbarnett427/Upspring-Portfolio/blob/main/img/UpspringExample.png" alt="Upspring Portfolio"/>
-  <sub><sup>© 2022 Upspring Portfolio - Licensed under the <a href="./LICENSE">GPLv3 License</a>.</sup></sub>
+  <sub><sup>© 2022 Upspring Portfolio - Licensed under the <a href="./LICENSE">MIT License</a>.</sup></sub>
   <br>
 </h2>
 </div>
